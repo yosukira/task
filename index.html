@@ -1,0 +1,68 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+    <title>任务系统说面</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .square {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+            height: 200px;
+            margin: 20px;
+            border: 1px solid black;
+        }
+
+        .circle {
+            width: 50px;
+            height: 50px;
+            margin: 10px;
+            border-radius: 50%;
+            border: 1px solid black;
+        }
+
+        .white {
+            background: white;
+        }
+
+        .green {
+            background: green;
+        }
+
+        .yellow {
+            background: yellow;
+        }
+
+        .gray {
+            background: gray;
+        }
+    </style>
+</head>
+<body>1、玲珑区域中，绿色代表全量任务，黄色代表只给A展示，不给B展示的任务
+2、用户任务面板中，圆的数量为任务的数量，绿色为全量任务，黄色为切量任务，灰色为兜底任务
+<div class="container">
+    玲珑<div class="square" id="areaA"></div>
+    用户A任务面板<div class="square" id="areaB"></div>
+    用户B任务面板<div class="square" id="areaC"></div>
+</div>
+
+<script src="1.js"></script> <!-- 引入 js 文件 -->
+</body>
+</html>
